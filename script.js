@@ -2,7 +2,7 @@
         const header = document.getElementById('header');
         const button = document.getElementById('click-button');
        
-//1.Add a comment here explaining the let clickCount variable  
+//1. Initializes clickCount variable, but also lets it change its values through get item. 
         let clickCount = localStorage.getItem('clickCount') ? parseInt(localStorage.getItem('clickCount')) : 0;
 
         // Update display on load
@@ -12,10 +12,10 @@
 //2.
 /*
 This is the script that determines what will happen if the button is clicked.
-On line 20, the "clickCount" variable will increment.
-On line 20, "setItem" updates the clickCount variable.
-On line 20, the "clickCountDisplay" updates to show the clickCount variable.
-On line 20, the updateUI() function is called.
+On line 21, the "clickCount" variable will increment.
+On line 22, "setItem" updates the clickCount variable.
+On line 23, the "clickCountDisplay" updates to show the clickCount variable.
+On line 24, the updateUI() function is called.
 */
         button.addEventListener('click', () => {
             clickCount++;
