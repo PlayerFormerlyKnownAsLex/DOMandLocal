@@ -12,10 +12,10 @@
 //2.
 /*
 This is the script that determines what will happen if the button is clicked.
-On line 21, the "clickCount" variable will increment.
-On line 22, "setItem" updates the clickCount variable.
-On line 23, 
-On line 24, the updateUI() function is called.
+On line 20, the "clickCount" variable will increment.
+On line 20, "setItem" updates the clickCount variable.
+On line 20, the "clickCountDisplay" updates to show the clickCount variable.
+On line 20, the updateUI() function is called.
 */
         button.addEventListener('click', () => {
             clickCount++;
