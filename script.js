@@ -9,8 +9,14 @@
         clickCountDisplay.textContent = clickCount;
         updateUI();
 
-//2. Explain what this event listener function does (and what function it calls).
-        // Add event listener to button
+//2.
+/*
+This is the script that determines what will happen if the button is clicked.
+On line 21, the "clickCount" variable will increment.
+On line 22, "setItem" updates the clickCount variable.
+On line 23, 
+On line 24, the updateUI() function is called.
+*/
         button.addEventListener('click', () => {
             clickCount++;
             localStorage.setItem('clickCount', clickCount);
@@ -18,7 +24,12 @@
             updateUI();
         });
 
-//3.Explain what function updateUI does and is holding the colors and texts
+//3. 
+/*
+When function "updateUI()" is called, the following happens:
+First, it randomly calls two different String values from an array out of five total values for each array.
+Secondly, it updates the color and text present on the website based on what values from the arrays were picked.
+*/
         function updateUI() {
             const colors = ['#FF5733', '#33FF57', '#3357FF', '#F5A623', '#E91E63'];
             const texts = [
